@@ -1,0 +1,11 @@
+ip a a 172.18.167.1/25 dev eth0
+ip a a 172.18.167.129/25 dev eth1
+ip a a 172.18.166.129/25 dev eth2
+
+ip r a 172.18.164.0/23 via 172.18.166.130
+ip r a 172.18.160.0/23 via 172.18.167.2
+ip r a 172.18.162.0/23 via 172.18.167.130
+
+iptables -t nat -A POSTROUTING -o eth3 -j MASQUERADE
+
+echo "nameserver 9.9.9.9" > /etc/resolv.conf

@@ -2,3 +2,5 @@ ip a a 172.18.165.254/23 dev eth0
 ip a a 172.18.166.130/25 dev eth1
 
 ip r a default via 172.18.166.129
+
+echo "nameserver 9.9.9.9" > /etc/resolv.conf
