@@ -7,4 +7,5 @@ useradd -m admin
 echo "admin:admin" | chpasswd
 
 apt update
-apt install ftp
+apt -y install ftp
+echo "alias 'ftp-connect=ftp -p 172.18.164.1'" > ~/.bashrc
