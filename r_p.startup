@@ -1,6 +1,2 @@
-ip a a 172.18.161.254/23 dev eth0
-ip a a 172.18.167.2/25 dev eth1
-
-ip r a default via 172.18.167.1
-
-echo "nameserver 9.9.9.9" > /etc/resolv.conf
+rsync -av /shared/r_p/ /
+/etc/init.d/networking restart

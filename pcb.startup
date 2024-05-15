@@ -1,7 +1,6 @@
-ip a a 172.18.160.2/23 dev eth0
-ip r a default via 172.18.161.254
+rsync -av /shared/pcb/ /
+/etc/init.d/networking restart
 
-echo "nameserver 9.9.9.9" > /etc/resolv.conf
 systemctl start sshd
 useradd -m admin
 echo "admin:admin" | chpasswd

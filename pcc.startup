@@ -1,1 +1,2 @@
-dhclient
+rsync -av /shared/pcc/ /
+/etc/init.d/networking restart
