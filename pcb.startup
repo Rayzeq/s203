@@ -8,3 +8,4 @@ echo "admin:admin" | chpasswd
 apt update
 apt -y install ftp
 echo "alias 'ftp-connect=ftp -p 172.18.164.1'" > ~/.bashrc
+echo "Fichier de PCB" > test_pcb.txt

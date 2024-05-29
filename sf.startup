@@ -7,3 +7,4 @@ echo "admin:admin" | chpasswd
 apt update
 apt install -o Dpkg::Options::="--force-confold" -y vsftpd
 /etc/init.d/vsftpd start
+echo "Fichier de SF" > test_sf.txt
